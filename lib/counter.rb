@@ -16,6 +16,11 @@ class Counter
     @time = Time.now
   end
 
+  def reset
+    @count = 0
+    @time = Time.now
+  end
+
   def self.instance
     @counter ||= Counter.new
   end
